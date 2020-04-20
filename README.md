@@ -20,5 +20,18 @@ We will evaluate your test.txt using mean squared error. <10 is good. <5 is bett
 Twitter
 ------
 
-<a href="https://twitter.com/comma_ai">Follow us!</a>
+<a href="https://twitter.com/comma_ai">Follow us!</a>  
+
+#### Approach  
+
+Data for pretraining:  
+https://github.com/commaai/comma2k19  
+
+Download torrent-file from [academictorrents.com](http://academictorrents.com):  
+```
+wget --no-check-certificate 'http://academictorrents.com/download/65a2fbc964078aff62076ff4e103f18b951c5ddb.torrent' -P ./data  
+```  
+
+Install torrent cli:  https://help.ubuntu.com/community/TransmissionHowTo  
+
 
