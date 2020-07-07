@@ -1,4 +1,5 @@
 import os
+import sys
 import shutil
 import argparse
 
@@ -34,6 +35,7 @@ if __name__ == "__main__":
         magnitude, angle = cv.cartToPolar(flow[..., 0], flow[..., 1])
         # Sets image hue according to the optical flow direction
         mask[..., 0] = angle * 180 / np.pi / 2
+        mask[..., 1] = magnitude
         # crop ego-car (should be before optical flow calc.)
         mask[350:,...] = 0
         # dumps mask
